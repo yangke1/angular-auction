@@ -6,11 +6,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./product.component.css']
 })
 export class ProductComponent implements OnInit {
-
   private  products: Array<Product>;
-
+  private imgUrl = 'http://placehold.it/320X150';
   constructor() { }
-
   ngOnInit() {
     this.products = [
       new Product(1, '第一个商品', 1.99, 3.5, '测试1', ['电子产品', '硬件设备']),
@@ -21,7 +19,6 @@ export class ProductComponent implements OnInit {
       new Product(6, '第一个商品', 6.99, 4.5, '测试6', ['电子产品'])
      ];
   }
-
 }
 
 export class Product {
