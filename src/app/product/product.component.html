@@ -5,7 +5,7 @@
     <div class="caption">
     <!--  //插值表达式-->
       <h4 class="pull-right">{{product.price}}元</h4>
-      <h4><a>{{product.title}}</a></h4>
+      <h4><a [routerLink] = "['/product', product.title]">{{product.title}}</a></h4>
       <p>{{product.desc}}</p>
     </div>
   </div>
